@@ -3,11 +3,9 @@
 #include <string.h>
 
 /**
- * main - 
+ * main - Entry point 
  *
- * Description: 
- *
- * Return: 
+ * Return: 1 (Success)
  */
 
 int main(void)
