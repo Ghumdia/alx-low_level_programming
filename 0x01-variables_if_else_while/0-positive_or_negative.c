@@ -5,7 +5,7 @@
  /**
  * main - determine if number is positive or negative
  *
- * Description: prints whether the number is 0, - or +
+ * Description: prints whether the number is
  * it is executed
  *
  * Return 0 (Success)
