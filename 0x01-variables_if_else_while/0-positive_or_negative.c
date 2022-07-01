@@ -3,10 +3,9 @@
 #include <stdlib.h>
 
  /**
- * main - determine if number is positive or negative
+ * main - Entry point
  *
- * Description: prints whether the number is
- * it is executed
+ * Description: 'prints whether the number is'
  *
  * Return: Always 0 (Success)
  */
