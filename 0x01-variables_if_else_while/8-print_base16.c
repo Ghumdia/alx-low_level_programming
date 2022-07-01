@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
- * Description: prints the hexa decimals
+ * Description: prints hexa decimal
  *
  * Return: Always 0 (Success)
  */
