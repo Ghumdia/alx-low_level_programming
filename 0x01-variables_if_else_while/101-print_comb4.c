@@ -27,7 +27,7 @@ int main(void)
 				putchar(i);
 				putchar(e);
 				putchar(q);
-				if (1 < 55 || e < 56 || q < 57)
+				if (i < 55 || e < 56 || q < 57)
 				{
 					putchar(44);
 					putchar(32);
