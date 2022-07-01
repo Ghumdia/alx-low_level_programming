@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-
-/**
+ /**
  * main - determine if number is positive or negative
  *
  * Description: prints "whether the number is 0, - or +"
