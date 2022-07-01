@@ -3,14 +3,13 @@
 #include <stdlib.h>
 
 /**
- * main - 
+ * main - Entry point
  *
- * Description:
+ * Description: prints "whether the number is 0, - or +"
  *
- * Return:
+ * Return 0 (Success)
  */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
