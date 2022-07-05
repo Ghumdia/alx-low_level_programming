@@ -3,7 +3,7 @@
 /**
  * main - check code
  *
- * print_alphabet - print alphabet
+ * print_alphabet - print_alphabet
  *
  * Return: Always 0 (Success)
  */
