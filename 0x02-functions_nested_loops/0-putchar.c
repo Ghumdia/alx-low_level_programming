@@ -6,7 +6,7 @@
  * Description: described something
  *
  * Return: Always 1 (Success)
- */ 
+ */
 int main(void)
 {
 	_putchar('_');
