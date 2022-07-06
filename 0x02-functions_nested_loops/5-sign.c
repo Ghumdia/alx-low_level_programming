@@ -2,8 +2,7 @@
 
 /**
  * print_sign - prints signs
- *
- * Description: something something
+ *@n: n is a digit of something
  *
  * Return: 1 or 0
  */
