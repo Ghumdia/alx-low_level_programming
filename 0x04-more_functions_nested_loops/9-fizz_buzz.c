@@ -3,8 +3,6 @@
 /**
  * main - Entry point
  *
- * Description: prints fizz buzz for multiples
- *
  * Return: void
  */
 
