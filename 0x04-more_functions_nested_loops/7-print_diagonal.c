@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints lines in diagonal
- * @n: n is an integer
+ * print_diagonal - diagonal line
+ * @n: number
  *
- * Return: 0
+ * Return: void
  */
 
 void print_diagonal(int n)
 {
-	int lines;
+	int line = 0;
 	int spaces;
 
 	if (n > 0)
 	{
-		for (lines = 0; lines < n; lines++)
+		while (line < n)
 		{
-			for (spaces = 0; spaces < lines; spaces++)
+			for (spaces = 0; spaces < line; spaces++)
 			{
-				_putchar('\\');
-				_putchar('\n');
+				_putchar(' ');
 			}
+			_putchar('\\');
 			_putchar('\n');
+			line++;
 		}
 	}
-	else 
+	else
 	{
 		_putchar('\n');
 	}
