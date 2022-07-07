@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * mul
+ * mul - multiplies intergers
+ * @a: integer
+ * @b: integer
  *
  * Return: 0
  */
