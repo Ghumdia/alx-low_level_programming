@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * largest_number - returns the latgest
+ * largest_number - nuberrr larg
  * @a: integer
- * @b: ineger
+ * @b: integer
  * @c: integer
- * Return: largest number
+ * Return: number
  */
 
 int largest_number(int a, int b, int c)
@@ -24,10 +24,9 @@ int largest_number(int a, int b, int c)
 	{
 		largest = b;
 	}
-	else 
+	else
 	{
 		largest = c;
 	}
-
 	return (largest);
 }
