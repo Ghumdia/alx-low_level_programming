@@ -1,35 +1,28 @@
-#include <math.h>
 #include <stdio.h>
 
 /**
- * main - finds and prints something
- * Return: Always 0 (Success)
+ * main - prints the largest number
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
-	long int n;
-	long int max;
-	long int i;
+	long int prime = 612852475143;
+	long int q = prime;
+	long int d = 2;
 
-	n = 612852475143;
-	max = -1;
-	while (n % 2 == 0)
+	while (q != d)
 	{
-		max = 2;
-		n /= 2;
-	}
-	for (i = 3; i <= sqrt(n); i = i + 2)
-	{
-		while (n % i == 0)
+		if (q % d == 0)
 		{
-			max = i;
-			n = n/i;
+			q = q / d;
+		}
+		else
+		{
+			d++;
 		}
 	}
-	if (n > 2)
-	{
-		max = n;
-	}
-	printf("%ld\n", max);
+	printf("%li\n", q);
 	return (0);
 }
