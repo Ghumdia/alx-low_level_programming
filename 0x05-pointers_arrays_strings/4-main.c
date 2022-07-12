@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	char *str;
+	char *s;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	print_rev(str);
+	s = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	print_rev(s);
 	return (0);
 }
