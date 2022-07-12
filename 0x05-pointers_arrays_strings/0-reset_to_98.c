@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - Return
- * Description: pointers and arrays
+ * reset_to_98 - Return
+ * @n: an integer
  *
  * Return: 0
  */
