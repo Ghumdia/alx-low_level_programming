@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
- * print_rev - prints string backwards
- * @s: string
- * 
+ * print_rev - prints backwards
+ * @s: a string
+ *
  * Return: void
  */
 
