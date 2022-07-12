@@ -2,7 +2,7 @@
 
 /**
  * main - Return
- * @n: an integer
+ * Description: pointers and arrays
  *
  * Return: 0
  */
