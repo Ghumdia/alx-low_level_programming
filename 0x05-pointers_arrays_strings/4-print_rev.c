@@ -11,9 +11,6 @@
 
 void print_rev(char *s)
 {
-<<<<<<< HEAD
-
-=======
 	int i = 0;
 
 	while (s[i] != '\0')
@@ -27,5 +24,4 @@ void print_rev(char *s)
 		i--;
 	}
 	_putchar('\n');
->>>>>>> e092a817c2dbd46b91db9ba47f55684683762dc4
 }
