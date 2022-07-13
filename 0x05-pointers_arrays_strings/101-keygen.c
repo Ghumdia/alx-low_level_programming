@@ -18,7 +18,7 @@ int main(void)
 	char numb[1000] = "1234567890";
 	char letter[1000] = "abcdefghijklmnopqrst";
 	char Letter[1000] = "ABCDEFGHIJKLMNOP";
-	char sym[1000] = "$%&@!&";
+	//char sym[1000] = "$%&@!&";
 	char password[10];
 	randm = rand() % 3;
 	srand((unsigned int)(time(NULL)));
