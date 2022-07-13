@@ -21,7 +21,7 @@ int main(void)
 	char sym[1000] = "$%&@!&";
 	char password[10];
 	randm = rand() % 4;
-	sran((unsigned int)(time(NULL)));
+	srand((unsigned int)(time(NULL)));
 
 	for (i = 0; i < N; i++)
 	{
@@ -51,4 +51,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
