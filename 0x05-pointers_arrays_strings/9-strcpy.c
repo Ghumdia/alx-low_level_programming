@@ -3,7 +3,7 @@
 /**
  * _strcpy - nbr nvjif kg
  * @dest: jiif
- * @scr: nif
+ * @src: nif
  *
  * Return: nfunv
  */
