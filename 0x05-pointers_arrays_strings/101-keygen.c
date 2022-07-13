@@ -1,55 +1,42 @@
-#include <time.h>
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
- * main - password at random
+ * main - random password generator for 101-crackme
  *
- * Description: nvinf
- *
- * Return: void
+ * Return: always 0
  */
 int main(void)
 {
-	int N = 30;
-	int i = 0;
-	int randm = 0;
-	char numb[1000] = "1234567890";
-	char letter[1000] = "abcdefghijklmnopqrst";
-	char Letter[1000] = "AB CDEFGHIJKLMNOP";
-	char sym[1000] = "$%&@!&";
-	char password[30];
-	randm = rand() % 4;
-	srand((unsigned int)(time(NULL)));
+	int i, j, k, s;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[58];
 
-	for (i = 0; i < N; i++)
+	srand(time(NULL));
+	while (s != 2772)
 	{
-		if (randm == 1)
+		i = k = s = 0;
+		while ((2772 - 122) > s)
 		{
-			password[i] = numb[rand() % 10];
-			randm = rand() % 4;
-			printf("%c", password[i]);
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
 		}
-		else if (randm == 2)
+		while (c[k])
 		{
-			password[i] = letter[rand() % 20];
-			randm = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randm == 3)
-		{
-			password[i] = Letter[rand() % 16];
-			randm = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else
-		{
-			password[i] = sym[rand() % 6];
-			randm = rand() % 4;
-			printf("%c", password[i]);
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
 		}
 	}
-	putchar('\n');
+	p[i] = '\0';
+	printf("%s", p);
 	return (0);
 }
