@@ -20,7 +20,7 @@ char *cap_string(char *s)
 			{
 				*(s + i) -= 'a' - 'A';
 			}
-			else 
+			else
 			{
 				for (j = 0; j <= 12; j++)
 				{
