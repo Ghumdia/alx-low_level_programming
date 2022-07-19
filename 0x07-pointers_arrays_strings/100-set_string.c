@@ -2,7 +2,7 @@
 
 /**
  * set_string - set string
- * @s: pointer 
+ * @s: pointer
  * @to: string
  *
  * Return: 0
