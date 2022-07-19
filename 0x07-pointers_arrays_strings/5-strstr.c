@@ -20,7 +20,7 @@ char *_strstr(char *haystack, char *needle)
 			{
 				j++;
 			}
-			else 
+			else
 			{
 				break;
 			}
@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 			i++;
 			j = 0;
 		}
-		else 
+		else
 		{
 			return (haystack + i);
 		}
