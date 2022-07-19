@@ -11,7 +11,6 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	int j;
 
 	for (i = 0; *(s + i); i++)
 	{
