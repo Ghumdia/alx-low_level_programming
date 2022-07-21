@@ -2,6 +2,7 @@
 
 /**
  * _sqrt_recursion - square
+ * square - sqaure
  * @n: integer
  *
  * Return: 0
@@ -24,6 +25,6 @@ int square(int n, int val)
 	}
 	else
 	{
-		return(-1);
+		return (-1);
 	}
 }
