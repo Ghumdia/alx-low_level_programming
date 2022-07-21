@@ -13,6 +13,14 @@ int _sqrt_recursion(int n)
 	return (square(n, 1));
 }
 
+/**
+ * square - the square
+ * @n: int
+ * @val: int
+ *
+ * Return: 0
+ */
+
 int square(int n, int val)
 {
 	if (val * val == n)
