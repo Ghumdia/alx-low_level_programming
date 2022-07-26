@@ -9,24 +9,22 @@
  *
  * Return: NULL, 0 or ar
  */
-
 char *create_array(unsigned int size, char c)
 {
-	unsigned int n;
-	char *ar;
+	unsigned int i;
+	char *b;
 
-	ar = (char *)malloc(size * sizeof(char));
 	if (size == 0)
 		return (NULL);
-	else if (size != 0)
-	{
-		for (n = 0; n < size; n++)
-			*(ar + n) = c;
-		return (ar);
-	}
+	b = (char *)malloc(size * sizeof(char));
+	if (b == 0)
+		return (NULL);
 	else
 	{
-		return (NULL);
+		for (i = 0; i < size; i++)
+		{
+			*(b + i) = c;
+		}
+		return (b);
 	}
-	free(ar);
 }
