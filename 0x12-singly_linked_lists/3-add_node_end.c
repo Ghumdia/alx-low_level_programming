@@ -7,15 +7,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	newnode->str = strdup(str);
 	newnode->len = _strlen(str);
 	newnode->next = NULL;
-	if (*head == NULL)
-		*head = newnode;
-	else
-	{
-		list_t *lastnode = *head;
-		while (lastnode->next != NULL)
-			lastnode = lastnode->next;
-		lastnode = newnode;
-	}
+	list_t *lastnode = *head;
+	while (lastnode->next != NULL)
+		lastnode = lastnode->next;
+	lastnode = newnode;
 }
 
 int _strlen(const char *s)
