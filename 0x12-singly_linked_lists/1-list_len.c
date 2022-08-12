@@ -2,7 +2,7 @@
 
 /**
  * list_len - number of elements
- * @elm: number of elements
+ * @h: header of linked list
  *
  * Return: 0
  */
