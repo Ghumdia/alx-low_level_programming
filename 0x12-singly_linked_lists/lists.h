@@ -6,6 +6,15 @@
 #include <limits.h>
 #include <string.h>
 
+/**
+ * struct list_s - singly linked list
+ * @str: string
+ * @len: lenght of string
+ * @next: points to next node
+ *
+ * Description: singly listed node
+ */
+
 typedef struct list_s
 {
 	char *str;
