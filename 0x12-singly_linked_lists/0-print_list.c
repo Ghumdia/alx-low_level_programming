@@ -1,34 +1,28 @@
-#ifndef LISTS_H
-#define LISTS_H
-/*
- * File: lists.h
- * Auth: Brennan D Baraban
- * Desc: Header file containing prototypes and definitions for all functions
- *       and types written in the 0x11-singly_linked_lists directory.
- */
-
-#include <stdlib.h>
+#include "lists.h"
+#include <stdio.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * print_list - Prints all the elements of a list_t list.
+ * @h: The list_t list.
  *
- * Description: singly linked list node structure
- *              for Holberton project
+ * Return: The number of nodes in h.
  */
-typedef struct list_s
+
+size_t print_list(const list_t *h)
 {
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+	size_t nodes = 0;
 
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, const char *str);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
+	while (h)
+	{
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
 
-#endif
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		nodes++;
+		h = h->next;
+	}
+
+	return (nodes);
+}
